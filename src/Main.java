@@ -6,6 +6,10 @@ public class Main {
     public static void main(String[] args) {
         Employee ranga  =    new Employee();
 
+
+
+
+        
         ranga.setId("10");
         ranga.setName("RangaReddy");
         ranga.setSalary(1000000.50);
