@@ -9,4 +9,7 @@ public class Parent {
     public Parent(){
         System.out.println("Default constructor");
     }
+    void m1(){
+        System.out.println("parent m1");
+    }
 }

@@ -1,6 +1,7 @@
 package com.oops;
 
 public class C2 {
+    int i=10;
     public static void main(String[] args) {
        C1 c=new C1();
        c.m1();
@@ -13,7 +14,7 @@ public class C2 {
     public void m2(){
         System.out.println("m2");
         System.out.println(System.identityHashCode(this));
-        m3();
+        this.m3();
         C1 c=new C1();
         c.m1();
     }
@@ -25,6 +26,7 @@ public class C2 {
     }
 
     public static void m4(){
+
         System.out.println("m4");
     }
 

@@ -7,5 +7,6 @@ public class Test {
        // student.name="raja";
         System.out.println(student);*/
         Child c=new Child("ranga");
+        c.m2();
     }
 }
