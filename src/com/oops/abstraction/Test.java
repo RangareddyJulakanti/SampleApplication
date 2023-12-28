@@ -2,7 +2,7 @@ package com.oops.abstraction;
 
 public class Test {
     public static void main(String[] args) {
-       Cat c=new Cat("Cat");
+        Cat c=new Cat("Cat");
         //Dog d=new Dog("Dog");
         perform(c);
     }
