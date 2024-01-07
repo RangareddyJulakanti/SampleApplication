@@ -30,6 +30,7 @@ public class ArrayListDemo {
         l.add(ranga4);
         l.add(ranga5);
         l.add(ranga6);
+        l.add(ranga6);
         return l;
 
     }
