@@ -34,7 +34,7 @@ public class HashSetDemo1 {
         System.out.println(h.toString());//[16,2,5,6,15,23]
         //1000->(2^10)==1024 number of buckets threshold 1024*0.75 1024*3/4=768
         //new capacity=old capacity*2=1024*2  =2^11=2048
-        HashSet<Integer> h2=new HashSet<>(15);//2^4==16 16*3/4-->12
+        HashSet<Integer> h2=new HashSet<>(9);//2^4==16 16*3/4-->12
         h2.add(100);//100%16->4
         h2.add(38);//38%16-->6
         h2.add(21);//21%16-->5
@@ -43,12 +43,6 @@ public class HashSetDemo1 {
         h2.add(300);//300%16-->12
         h2.add(18);//18%16-->2
         System.out.println(h2);//17,18,100,21,38,200,300
-
-
-
-
-
-
 
 
     }

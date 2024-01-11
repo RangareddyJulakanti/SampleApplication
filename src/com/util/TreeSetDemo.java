@@ -10,15 +10,15 @@ public class TreeSetDemo {
         //All wrapper+string+stringBuffer classes are comparable
         //Comparable class is available in java.lang
         // public int compareTo(T o);//it will use by Treeset for sorting
-        TreeSet<Integer> t=new TreeSet<>();
+        TreeSet<Integer> t=new TreeSet<>();//Default natural sorting order
         t.add(10);
         t.add(18);
         t.add(45);
-        t.add(-10);
+        t.add(10);
         t.add(5);
         t.add(4);
         System.out.println(t);
-        TreeSet<Employee> t1=new TreeSet<>();
+        TreeSet<Employee> t1=new TreeSet<>();//Our own sorting order
         t1.add(new Employee(12,"sindhu"));
         t1.add(new Employee(11,"sai"));
         t1.add(new Employee(13,"krishna"));
@@ -43,13 +43,14 @@ public class TreeSetDemo {
         System.out.println(t3);*/
 
 
-        TreeSet<Student> t3=new TreeSet<>(new StudentSectionComparator());
+        TreeSet<Student> t3=new TreeSet<>(new StudentIdComparator());//custom sorting order //predefined class
         t3.add(new Student(12,"A"));
         t3.add(new Student(8,"F"));
         t3.add(new Student(5,"C"));
         t3.add(new Student(8,"B"));
         t3.add(new Student(4,"D"));
-        t3.add(new Student(3,"E"));
+        t3.add(new Student(3,"E"));//1024 elements linkedlist 1024 iteration//10 eleemtns 10 interations
+        //1024 elements tree log  2 power 10 -->10 iterations TC: (long n)   log10  -->log8-->3  iteration
 
         System.out.println(t3);
     }
