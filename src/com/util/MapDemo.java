@@ -63,7 +63,7 @@ public class MapDemo {
         System.out.println(map1);//12,12,10,4,0
 */
         TreeMap<Student,Integer> t3=new TreeMap(new StudentIdComparator());//custom sorting order //predefined class
-        //TC log(n) search, insert, deletion
+        //TC log(n) search, insert, deletion//1024 elements 2 power 10  -->10
         t3.put(new Student(12,"A"),1);
         t3.put(new Student(8,"F"),2);
         t3.put(new Student(5,"C"),3);
