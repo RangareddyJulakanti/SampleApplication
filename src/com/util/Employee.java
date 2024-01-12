@@ -33,10 +33,8 @@ public class Employee implements Comparable<Employee>{
        Employee e2=o;
        if(e1.id>e2.id){
            return 1;
-       } else if (e1.id<e2.id) {
+       } else {
            return -1;
-       }else{
-           return 0;
        }
     }
 }

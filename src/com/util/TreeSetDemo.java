@@ -1,5 +1,6 @@
 package com.util;
 
+import java.util.Iterator;
 import java.util.TreeSet;
 
 public class TreeSetDemo {
@@ -51,7 +52,10 @@ public class TreeSetDemo {
         t3.add(new Student(4,"D"));
         t3.add(new Student(3,"E"));//1024 elements linkedlist 1024 iteration//10 eleemtns 10 interations
         //1024 elements tree log  2 power 10 -->10 iterations TC: (long n)   log10  -->log8-->3  iteration
-
+        Iterator<Student> studentIterator= t3.iterator();
+        while (studentIterator.hasNext()){
+            System.out.println(studentIterator.next());
+        }
         System.out.println(t3);
     }
 }
